@@ -1,0 +1,60 @@
+.animal {
+  font-weight: bold;
+}
+.grey-footer {
+  color: grey;
+  text-align: center;
+}
+#quote {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fact {
+  position: absolute;
+  opacity: 0;
+  margin: auto; 
+  width: 90%; 
+  align-self: center;
+  overflow-y: auto;
+  max-height: 100px; 
+ }
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover .fact {
+  opacity: 1;
+  border-radius: 10px;
+  color: #5e5d5d;
+}
+
+.card-text.animal {
+  font-size: 15px;
+}
+
+
+.card:hover .animal-pic {
+  opacity: 0.3;
+}
+
+form {
+  margin: 0 auto;
+  border: 1px solid rgb(193, 187, 187);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+.input-group-append.create-space {
+  padding-left: 10px;
+}
